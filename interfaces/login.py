@@ -107,31 +107,25 @@ class LoginPage(ctk.CTk):
         # Séparateur orange
         cv.create_rectangle(70, 322, 370, 325,
                             fill=ORANGE, outline="")
+        # ── Phrase tagline multifonction ──────────────────────
+tagline = "Plateforme multifonction pour gérer\nvos ventes et votre suivi client."
 
-        # Features
-        features = [
-            ("📦", "Produits & Stock"),
-            ("💰", "Ventes & Facturation"),
-            ("📋", "Devis & Bons de commande"),
-            ("🚚", "Suivi des livraisons"),
-            ("📊", "Dashboard & Rapports"),
-        ]
-        for i, (icon, label) in enumerate(features):
-            y = 352 + i * 40
-            # Fond pill
-            cv.create_rectangle(52, y - 13, 396, y + 19,
-                                 fill="#1E2D5A", outline="",
-                                 width=0)
-            # Bullet coloré
-            color = ORANGE if i % 2 == 0 else LBLUE
-            cv.create_oval(64, y - 5, 78, y + 9,
-                           fill=color, outline="")
-            # Icône + texte
-            cv.create_text(92, y + 2, text=icon,
-                           font=("Arial", 12), fill=WHITE, anchor="w")
-            cv.create_text(116, y + 2, text=label,
-                           font=("Arial", 10),
-                           fill="#90AECB", anchor="w")
+# Fond arrondi
+cv.create_rectangle(52, 340, 396, 430,
+                     fill="#1E2D5A", outline="",
+                     width=0)
+# Ligne décorative orange
+cv.create_rectangle(52, 340, 60, 430, fill=ORANGE, outline="")
+
+# Texte principal
+cv.create_text(230, 385,
+               text=tagline,
+               font=("Arial", 13, "bold"),
+               fill=WHITE,
+               anchor="center",
+               justify="center",
+               width=300)
+        
 
         # Copyright
         cv.create_text(220, 607,
