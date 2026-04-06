@@ -108,17 +108,17 @@ class LoginPage(ctk.CTk):
         cv.create_rectangle(70, 322, 370, 325,
                             fill=ORANGE, outline="")
         # ── Phrase tagline multifonction ──────────────────────
-tagline = "Plateforme multifonction pour gérer\nvos ventes et votre suivi client."
+         tagline = "Plateforme multifonction pour gérer\nvos ventes et votre suivi client."
 
-# Fond arrondi
-cv.create_rectangle(52, 340, 396, 430,
+         # Fond arrondi
+        cv.create_rectangle(52, 340, 396, 430,
                      fill="#1E2D5A", outline="",
                      width=0)
-# Ligne décorative orange
-cv.create_rectangle(52, 340, 60, 430, fill=ORANGE, outline="")
+        # Ligne décorative orange
+        cv.create_rectangle(52, 340, 60, 430, fill=ORANGE, outline="")
 
-# Texte principal
-cv.create_text(230, 385,
+       # Texte principal
+        cv.create_text(230, 385,
                text=tagline,
                font=("Arial", 13, "bold"),
                fill=WHITE,
