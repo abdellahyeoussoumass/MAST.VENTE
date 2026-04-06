@@ -27,8 +27,8 @@ root.withdraw()  # Cacher la fenêtre racine
 from interfaces.splash import SplashScreen
 
 def apres_splash():
-    root.destroy()  # Détruire fenêtre racine
-    lancer_app()    # Lancer login
+     root.destroy()  # Détruire fenêtre racine
+     lancer_app()    # Lancer login
 
 splash = SplashScreen(root)
 # Quand splash se ferme → lancer login
